@@ -9,22 +9,23 @@
             a:link {text-decoration: none;}
             a:visited {color:inherit; text-decoration: none;}
             a:hover {text-decoration: underline;}
-
-        .div1{position:absolute; top:10.4%; left:60.5%;
+            #active{background-color: #042759; border:#042759 2px solid;}
+        .second_top{position:absolute; top:10.4%; left:60.5%;
               display:grid;
               grid-template-columns: 53px 195px 100px;}
-            .div2{background-color:#FFFFFF; border:#DADAE3 2px solid; border-radius: 4px;
+            .second_top_first{background-color:#FFFFFF; border:#DADAE3 2px solid; border-radius: 4px;
                   font-size: 12px; padding:4% 8% 4% 8%}
-            .div2:hover{border:#0770E3 2px solid;}
-            .div3{background-color:#FFFFFF; border:#DADAE3 2px solid; border-radius: 4px;
+            .second_top_first:hover{border:#0770E3 2px solid;}
+            .second_top_second{background-color:#FFFFFF; border:#DADAE3 2px solid; border-radius: 4px;
                   font-size: 18px; color:#0770E3; padding:4% 16% 4% 16%}
-            .div3:hover{border:#0770E3 2px solid;}
-        .div4{position:absolute; top:16.6%; left:19%;
-              display:grid;
-              grid-template-columns: 97px 91px 94px}
-            .div5{background-color:#0770E3; border:#0770E3 2px solid; border-top-right-radius: 4px; border-top-left-radius: 4px;
+            .second_top_second:hover{border:#0770E3 2px solid;}
+        .navigation{position:absolute; top:-6.3%; left:19%;
+                  display:grid;
+                  grid-template-columns: 97px 92px 94px}
+            .top_button{background-color:#0770E3; border:#0770E3 2px solid; border-top-right-radius: 4px; border-top-left-radius: 4px;
                   font-size: 16px; color:#ffffff; padding: 5% 0% 5% 0%; font-weight: 600;}
-            .div5:hover{background-color: #042759; border: #042759 2px solid;}
+            .top_button:hover{background-color: #042759; border: #042759 2px solid;}
+        .main_image{position:absolute; top:20%; left:0%}
       </style>
   </head>
   <body>
@@ -36,20 +37,19 @@
         <div>
           <div style="position:absolute; top:10.1%; left:18.9%"><a href="index.html"><img src="skyscanner.jpg" width="38%"></a></div>
 
-          <div class="div1">
+          <div class="second_top">
               <div style="color:#0770E3; font-size:14px; padding-top:6px"><a href="ㅜㅜ.html">도움말</a></div>
-              <div><a href="ㅜㅜ.html"><button class="div2">한국어 🌍 대한민국&nbsp&nbsp<span style="color:#B3B4C2; font-size:10px">W KRW</span></button></a></div>
-              <div><a href="ㅜㅜ.html"><button class="div3"><strong>로그인</strong></button></a></div>
+              <div><a href="ㅜㅜ.html"><button class="second_top_first">한국어 🌍 대한민국&nbsp&nbsp<span style="color:#B3B4C2; font-size:10px">W KRW</span></button></a></div>
+              <div><a href="ㅜㅜ.html"><button class="second_top_second"><strong>로그인</strong></button></a></div>
           </div>
-
-          <div style="position:absolute; top:20.55%"><img src="ㄴ.jpg"></div>
-
-          <div class="div4">
-              <div><a href="index.html"><button class="div5">&nbsp&nbsp✈  항공권&nbsp&nbsp</button></a></div>
-              <div><a href="호텔.html"><button class="div5">&nbsp&nbsp&nbsp🛏  호텔&nbsp&nbsp&nbsp</button></a></div>
-              <div><a href="렌터카.html"><button class="div5">&nbsp&nbsp🏍  렌터카&nbsp&nbsp</button></a></div>
+          <div class="main_image">
+                <div class="navigation">
+                  <div><a href="index.html"><button class="top_button">&nbsp&nbsp✈  항공권&nbsp&nbsp</button></a></div>
+                  <div><a href="호텔.html"><button class="top_button"; button id="active">&nbsp&nbsp&nbsp🛏  호텔&nbsp&nbsp&nbsp</button></a></div>
+                  <div><a href="렌터카.html"><button class="top_button">&nbsp&nbsp🏍  렌터카&nbsp&nbsp</button></a></div>
+                </div>
+                <div><img src="ㄴ.jpg"></div>
           </div>
-
               <div style="position:absolute; left:18.9%; top:24.2%; font-size: 59px; color:#ffffff;"><p><strong>머무를 곳을 찾아보세요</strong></p></div>
 
         </div>
