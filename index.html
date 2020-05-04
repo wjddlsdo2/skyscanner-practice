@@ -10,6 +10,8 @@
             a:visited {color:inherit; text-decoration: none;}
             a:hover {text-decoration: underline;}
             #active{background-color: #042759; border:#042759 2px solid;}
+            input::placeholder {font-style: oblique;}
+            input[type=text]{padding: 3px 3px 3px 8px;}
         .second_top{position:absolute; top:10.4%; left:60.5%;
               display:grid;
               grid-template-columns: 53px 195px 100px;}
@@ -26,7 +28,15 @@
                   font-size: 16px; color:#ffffff; padding: 5% 0% 5% 0%; font-weight: 600;}
             .top_button:hover{background-color: #042759; border: #042759 2px solid;}
 
+
         .main_image{position:absolute; top:20%; left:0%}
+        .main_box{position:absolute; top:35%; left:17.5%; background-color: #02122c; border: 3px #02122c solid;
+              border-radius: 4px; width: 65%; height: 39.8%;}
+            .radio_good{position:absolute; top:11%; left:1.5%; font-size: 16px; color:white;}
+              .gridcherrum{margin-right: 48px;}
+            .textbox_howto{position:absolute; top: 35%; left:2%; width:100%; font-size: 12px; color:white; }
+              .textbox_howto2{position:absolute; width:300px;}
+
       </style>
   </head>
   <body>
@@ -39,9 +49,9 @@
           <div style="position:absolute; top:10.1%; left:18.9%"><a href="index.html"><img src="skyscanner.jpg" width="38%"></a></div>
 
           <div class="second_top">
-              <div style="color:#0770E3; font-size:14px; padding-top:6px"><a href="ㅜㅜ.html">도움말</a></div>
-              <div><a href="ㅜㅜ.html"><button class="second_top_first">한국어 🌍 대한민국&nbsp&nbsp<span style="color:#B3B4C2; font-size:10px">W KRW</span></button></a></div>
-              <div><a href="ㅜㅜ.html"><button class="second_top_second"><strong>로그인</strong></button></a></div>
+              <div style="color:#0770E3; font-size:14px; padding-top:6px"><a href="sol.jpg">도움말</a></div>
+              <div><a href="sol.jpg"><button class="second_top_first">한국어 🌍 대한민국&nbsp&nbsp<span style="color:#B3B4C2; font-size:10px">W KRW</span></button></a></div>
+              <div><a href="sol.jpg"><button class="second_top_second"><strong>로그인</strong></button></a></div>
           </div>
           <div class="main_image">
                 <div class="navigation">
@@ -50,8 +60,25 @@
                   <div><a href="렌터카.html"><button class="top_button">&nbsp&nbsp🏍  렌터카&nbsp&nbsp</button></a></div>
                 </div>
                 <div><img src="ㄱ.jpg"></div>
+                <div style="position:absolute; left:18.9%; top:5%; font-size: 59px; color:#ffffff;"><p><strong>어디로 떠나볼까요?</strong></p></div>
+                    <div class="main_box">
+                      <div class="radio_good">
+                        <span class="gridcherrum"><input type="radio" id='E1' name="howto" value="왕복" style="width:18px; height:18px; border:1px"><label for="E1" style="position:absolute; top:1%">왕복</label></span>
+                        <span class="gridcherrum"><input type="radio" id='E2' name="howto" value="편도" style="width:18px; height:18px; border:1px"><label for="E2" style="position:absolute; top:1%">편도</label></span>
+                        <span class="gridcherrum"><input type="radio" id='E3' name="howto" value="다구간" style="width:20px; height:18px; border:1px;"><label for="E3" style="position:absolute; top:1%;">다구간</label></span>
+                      </div>
+                      <div class="textbox_howto">
+                        <span><input type="text" value="광주 무안 인터내셔널 (MWX)" placeholder="국가, 도시 또는 공항" style="font-size:16px ; width:250px; height:35px;">
+                          <label class="textbox_howto2" style="position:absolute; top:-40%; left:0%"><strong>출발지</strong></label>
+                        <span><input type="text" value="Everywhereㅇㅅㅇ" placeholder="국가, 도시 또는 공항" style="font-size:16px; width:200px; height:35px">
+                          <label class="textbox_howto2" style="position:absolute; top:-40%; left:25%"><strong>도착지</strong></label></span>
+                      </div>
+
+
+
+                    </div>
           </div>
-              <div style="position:absolute; left:18.9%; top:24.2%; font-size: 59px; color:#ffffff;"><p><strong>어디로 떠나볼까요?</strong></p></div>
+
 
         </div>
   </body>
