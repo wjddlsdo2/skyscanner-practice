@@ -21,7 +21,7 @@
             .second_top_second{background-color:#FFFFFF; border:#DADAE3 2px solid; border-radius: 4px;
                   font-size: 18px; color:#0770E3; padding:4% 16% 4% 16%}
             .second_top_second:hover{border:#0770E3 2px solid;}
-        .navigation{position:absolute; top:-6.3%; left:19%;
+        .navigation{position:absolute; top:-6.2%; left:19%;
                   display:grid;
                   grid-template-columns: 97px 92px 94px;}
             .top_button{background-color:#0770E3; border:#0770E3 2px solid; border-top-right-radius: 4px; border-top-left-radius: 4px;
@@ -54,6 +54,14 @@
         .fs1_bottom{position: inherit; background-color: #02122c; border: 3px #02122c solid; width:98.8%; height:80px;
                     border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
           .seoul{position: absolute; top:13%; left:4%;}
+        .fs2{height:59%; width:52.4%; overflow:hidden;
+            border-top-left-radius: 6px; border-top-right-radius: 6px;}
+        .fs2 img{height: 100%; width: 100%; object-fit: cover; transform: scale(1.0); transition: transform .6s;}
+        .fs2 img:hover{transform:scale(1.07); transition: transform 2s; filter: brightness(105%);}
+        .fs2_bottom{position: inherit; background-color: #02122c; border: 3px #02122c solid; width:51.2%; height:80px;
+                    border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
+          .london{position: absolute; top:13%; left:8%;}
+
 
       </style>
   </head>
@@ -70,15 +78,18 @@
           <div><a href="sol.jpg"><button class="second_top_second"><strong>로그인</strong></button></a></div>
         </div>
         <div class="main_image">
-          <div class="navigation">
-            <div><a href="index.html"><button class="top_button"; button id="active">&nbsp&nbsp✈  항공권&nbsp&nbsp</id></button></a></div>
-            <div><a href="호텔.html"><button class="top_button">&nbsp&nbsp&nbsp🛏  호텔&nbsp&nbsp&nbsp</button></a></div>
-            <div><a href="렌터카.html"><button class="top_button">&nbsp&nbsp🏍  렌터카&nbsp&nbsp</button></a></div>
+          <div class="binding">
+            <div class="navigation">
+              <div><a href="index.html"><button class="top_button"; button id="active">&nbsp&nbsp✈  항공권&nbsp&nbsp</id></button></a></div>
+              <div><a href="호텔.html"><button class="top_button">&nbsp&nbsp&nbsp🛏  호텔&nbsp&nbsp&nbsp</button></a></div>
+              <div><a href="렌터카.html"><button class="top_button">&nbsp&nbsp🏍  렌터카&nbsp&nbsp</button></a></div>
+            </div>
+            <div>
+              <div><img src="ㄱ.jpg"></div>
+              <div><img src="ㄱ_bottom.jpg" style="position:absolute; top: 99.3%; left:46.55%;"></div>
+            </div>
           </div>
-          <div>
-            <div><img src="ㄱ.jpg"></div>
-            <div><img src="ㄱ_bottom.jpg" style="position:absolute; top: 99.37%; left:46.55%;"></div>
-          </div>
+
           <div style="position:absolute; left:18.9%; top:5%; font-size: 59px; color:#ffffff;"><p><strong>어디로 떠나볼까요?</strong></p></div>
           <div class="main_box">
             <div class="radio_good">
@@ -109,18 +120,31 @@
           <div class=favoritespot>
             <p style= font-size:25px><strong>인기 도착지</strong></p>
               <div>
-                <div class="fs1"><a href="sol.jpg"><img src="광화문.jpg"></a></div>
-                <a href="sol.jpg"><div class="fs1_bottom" style="position:absolute; top:76%">
-                  <div class="seoul">
-                    <span style="font-size: 24px; color:white"><strong>서울,</strong></span>
-                    <span style="color:white; font-weight: 500">대한민국</span><br>
-                    <span style="color:#FF7B59; font-weight: 700">가격 확인 ></span>
+                <a href="sol.jpg">
+                  <div class="fs1"><img src="광화문.jpg"></div>
+                  <div class="fs1_bottom" style="position:absolute; top:76%">
+                    <div class="seoul">
+                      <span style="font-size: 24px; color:white"><strong>서울,</strong></span>
+                      <span style="color:white; font-weight: 500">대한민국</span><br>
+                      <span style="color:#FF7B59; font-weight: 700">가격 확인 ></span>
+                    </div>
                   </div>
-                </div></a>
-
+                </a>
+                <a href="sol.jpg">
+                  <div class="fs2" style="position:absolute; left: 104%; top: 17.5%;"><img src="시계탑.jpg"></div>
+                  <div class="fs2_bottom" style="position:absolute; top:76%; left:104%;">
+                    <div class="london">
+                      <span style="font-size: 24px; color:white"><strong>런던,</strong></span>
+                      <span style="color:white; font-weight: 500">영국</span><br>
+                      <span style="color:#FF7B59; font-weight: 700">가격 확인 ></span>
+                    </div>
+                  </div>
+                </a>
 
                 <br><br><br><br>asfdsd
           </div>
+        </div>
+      </div>
 
 
 
